@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_manual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.02"
+                android:text="Health Parameters"
+                android:textColor="#516b9e"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/netflix" />
+
+                <TextView
+                    android:id="@+id/tt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i1"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.03"
+                    android:text="Glucose"
+                    android:textColor="#516b9e"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/gluEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tt1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i1"
+                    android:hint="Enter Value"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColor="#516b9e"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r1"
+                android:paddingLeft="15dp"
+                android:paddingTop="50dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/spotify" />
+
+                <TextView
+                    android:id="@+id/tt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i2"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.03"
+                    android:text="Respiration"
+                    android:textColor="#516b9e"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ResEdi"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tt2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i2"
+                    android:hint="Enter Value"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColor="#516b9e"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r2"
+                android:paddingLeft="15dp"
+                android:paddingTop="50dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/dribble" />
+
+                <TextView
+                    android:id="@+id/tt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i3"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.03"
+                    android:text="Body Temperature"
+                    android:textColor="#516b9e"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/BDEdi"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tt3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i3"
+                    android:hint="Enter Value"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColor="#516b9e"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r3"
+                android:paddingLeft="15dp"
+                android:paddingTop="50dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/i4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/amazon" />
+
+                <TextView
+                    android:id="@+id/tt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i4"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.03"
+                    android:text="Blood Pressure"
+                    android:textColor="#516b9e"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/BPEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tt4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i4"
+                    android:hint="Enter Value"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColor="#516b9e"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r4"
+                android:paddingLeft="15dp"
+                android:paddingTop="50dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/i5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/download1" />
+
+                <TextView
+                    android:id="@+id/tt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/i5"
+                    android:fontFamily="sans-serif-black"
+                    android:letterSpacing="0.03"
+                    android:text="Oxygen Saturation"
+                    android:textColor="#516b9e"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/OXyEdi"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tt5"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Enter Value"
+                    android:layout_toRightOf="@+id/i5"
+                    android:background="@android:drawable/editbox_background"
+                    android:textColor="#516b9e"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="177dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loginborder"
+            android:fontFamily="@font/aclonica"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/forgotPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
